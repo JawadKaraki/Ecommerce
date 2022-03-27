@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: DIN pro;
+	text-transform: uppercase;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.menu{
+	width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15%;
+}
+.menu-links{
+    color: white;
+	position: relative;
+    font-size: 20px;
+    top: 37px;
+}
+.menu-links:hover{
+	color: rgb(150,150,150); 
+	
+}
+#exit{
+	font-size: 6vh;
+	margin: 10px;
+	display: block;
+
+}
+#home{
+	font-size: 6vh;
+	margin-top: 4vh;
+	color: white;
+}
+#navbar{
+    width:100%;
+    height: 100px;
+    background-color:transparent;
+    display: flex;
+}
+
+#bars{
+    color: white;
+    float: right;
+    font-size: 60px;
+    margin: 15px;
+}
+.quote{
+    position: relative;
+    font-size: 20px;
+    top: 50px;
+    left: 50px;
+    
+}
+nav img{
+    margin: 0;
+    margin-left: 100px;
+    height: 100px;
+    width: 100px;
+
+}
+#section1{
+    height: 700px;
+    background-color: #353535;
+    background-image:url("../img/boys.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.text{
+    height: 50px;
+    color: #ff8b15;
+    width: 100%;
+    font-size: 40px;
+    margin-left: 115px;
+    margin-top: 100px;
+    line-height: 60px;
+
+}
+.small-text{
+    color: #ff8b15;
+
+    width: 50%;
+    font-size: 13px;
+    margin-left: 115px;
+    margin-top: 100px;
+    line-height: 20px;
+
+}
+#signup-btn{
+    background-color:transparent;
+    border:1px solid #ff8b15;
+    color: #ff8b15;
+    border-radius: 100px;
+    height: 40px;
+    width: 100px;
+    margin-left: 115px;
+    margin-top: 60px;
+    font-size: 10px;
+}
+#signup-btn:hover{
+    background-color: #ff8b15;
+    color:#353535;
+    transition: 0.5s;
+    
+}
+#section2{
+    background-color:#f9f9f9;
+}
+.products{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product{
+    background-color: #ffffff;
+    height: 500px;
+    width: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+.product img{
+    max-height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product .img-cont{
+    width: 300px;
+    height: 200px;
+    margin-top: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.productidbtn{
+    position: absolute;
+    height:500px;
+    border:0px;
+    width: 300px;
+    background-color:transparent;
+}
+.product:hover{
+    background-color:#ff8b15;
+    transition: 0.5s;
+}
+.product:hover .price{
+    color: #f9f9f9;
+    transition: 0.5s;
+}
+
+.product .buttons{
+    width: 100%;
+    height: 30px;
+}
+.cart{
+    background-color: transparent;
+    color: #353535;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 0;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.heart{
+    background-color:transparent;
+    color: #353535;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 0;
+    font-size: 28px;
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+}
+.cart:hover{
+    color: #f9f9f9;
+    transition: 0.5s;
+
+}
+.heart:hover{
+    color: #f9f9f9;
+    transition: 0.5s;
+}
+.price{
+    margin-top: 30px;
+    color:#ff8b15;
+}
+nav button{
+    display: none;
+}
+.data-container{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.data-container a{
+    text-decoration: none;
+    color: black;
+}
+  @media only screen and (max-width: 900px) {
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        width: 20%;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    .small-text{
+        margin-left: 50px;
+    }
+    nav img{
+        margin-left: 40px;
+    }
+    #signup-btn{
+        margin-left: 50px;
+    }
+    .menu-links{
+        display:none;
+    }
+    .menu button{
+        display: inline;
+        background-color:transparent;
+        color: #ff8b15;
+        border: 0;
+        border-radius: 5px;
+        height: 60px;
+        width: 60px;
+        font-size: 50px;
+        margin-top: 15px;
+        position: relative;
+    }
+   }
+   @media only screen and (max-width: 600px) {
+    .text{
+        font-size: 30px;
+    }
+    
+   
+   }
